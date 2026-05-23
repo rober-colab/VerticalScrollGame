@@ -1,0 +1,20 @@
+# Unity生成フォルダ（GitHubに不要なファイル）
+/Library/
+/Temp/
+/Logs/
+/UserSettings/
+/obj/
+/Build/
+
+# Visual Studio
+.vs/
+*.csproj
+*.sln
+*.suo
+*.user
+*.pidb
+*.booproj
+
+# OS
+.DS_Store
+Thumbs.db
