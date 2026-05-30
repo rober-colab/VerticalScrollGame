@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hex Frontier Online | Rulebook</title>
+    <meta name="description" content="Hex Frontier Online の簡易ルールブック。資源、建設、交易、発展カード、勝利条件をまとめています。" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body class="rulebook-page">
+    <header class="site-header">
+      <a class="brand" href="./index.html#projects" aria-label="Back to portfolio">
+        <span class="brand-mark">HF</span>
+        <span>Hex Frontier Online</span>
+      </a>
+      <nav class="nav-links" aria-label="Rulebook navigation">
+        <a href="#overview">概要</a>
+        <a href="#turn">ターン</a>
+        <a href="#build">建設</a>
+        <a href="#cards">カード</a>
+        <a href="#score">勝利点</a>
+      </nav>
+    </header>
+
+    <main class="rulebook-main">
+      <section class="rulebook-hero" id="overview">
+        <p class="eyebrow">Simple Rulebook</p>
+        <h1>Hex Frontier Online 簡易ルールブック</h1>
+        <p class="rulebook-lead">
+          六角形のフロンティア宙域を開拓し、資源を集め、道路と拠点を広げながら10勝利点を目指すオンライン対戦ボードゲームです。
+          最大4人で遊べます。1人テスト起動にも対応しています。
+        </p>
+        <div class="project-actions">
+          <a class="button primary" href="./assets/video/hex-frontier-online-demo.mp4" target="_blank" rel="noopener">実機映像を見る</a>
+          <a class="button secondary" href="./index.html#projects">ポートフォリオへ戻る</a>
+        </div>
+      </section>
+
+      <section class="rulebook-section">
+        <h2>1. 基本用語</h2>
+        <table class="rulebook-table">
+          <thead>
+            <tr><th>用語</th><th>意味</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>ヘックス</td><td>盤面を構成する六角形のマスです。</td></tr>
+            <tr><td>頂点</td><td>ヘックスの角です。拠点や都市を置きます。</td></tr>
+            <tr><td>辺</td><td>ヘックスの辺です。道路を置きます。</td></tr>
+            <tr><td>拠点</td><td>資源を1個生産します。勝利点1点です。</td></tr>
+            <tr><td>都市</td><td>拠点を強化した建物です。資源を2個生産し、勝利点2点になります。</td></tr>
+            <tr><td>中立ドローン</td><td>置かれたヘックスの生産を止め、隣接する相手から資源を奪います。</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="rulebook-section">
+        <h2>2. 資源</h2>
+        <p>資源は5種類あります。中央の廃墟ヘックスは資源を生産しません。</p>
+        <table class="rulebook-table">
+          <thead>
+            <tr><th>資源</th><th>主な用途</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>食料</td><td>拠点、都市、発展カード</td></tr>
+            <tr><td>燃料</td><td>道路、拠点</td></tr>
+            <tr><td>物資</td><td>拠点、発展カード</td></tr>
+            <tr><td>部品</td><td>道路、拠点</td></tr>
+            <tr><td>合金</td><td>都市、発展カード</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="rulebook-section">
+        <h2>3. 初期配置</h2>
+        <ol>
+          <li>各プレイヤーは拠点2つ、道路2本を置きます。</li>
+          <li>拠点を置いたら、その拠点に接する道路を1本置きます。</li>
+          <li>2つ目の拠点を置いたとき、その拠点に隣接するヘックスから初期資源を受け取ります。</li>
+          <li>初期配置中は、他の拠点に近すぎる頂点には拠点を置けません。</li>
+        </ol>
+      </section>
+
+      <section class="rulebook-section" id="turn">
+        <h2>4. ターンの流れ</h2>
+        <ol>
+          <li>自分のターンになったらサイコロを振ります。</li>
+          <li>出目と同じ数字のヘックスが資源を生産します。</li>
+          <li>交易、建設、発展カードの使用を行います。</li>
+          <li>ターン終了ボタンで次のプレイヤーへ渡します。</li>
+        </ol>
+        <h3>7が出たとき</h3>
+        <ul>
+          <li>通常の資源生産は起きません。</li>
+          <li>資源を8枚以上持つプレイヤーは、手札の半分を失います。</li>
+          <li>サイコロを振ったプレイヤーは中立ドローンを移動します。</li>
+          <li>移動先に隣接する相手拠点があれば、相手から資源1枚を奪います。</li>
+        </ul>
+      </section>
+
+      <section class="rulebook-section" id="build">
+        <h2>5. 建設</h2>
+        <table class="rulebook-table">
+          <thead>
+            <tr><th>建設</th><th>コスト</th><th>効果</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>道路</td><td>燃料1 + 部品1</td><td>自分の開拓範囲を広げます。</td></tr>
+            <tr><td>拠点</td><td>食料1 + 物資1 + 燃料1 + 部品1</td><td>資源1個生産、勝利点1点です。</td></tr>
+            <tr><td>都市</td><td>食料2 + 合金3</td><td>資源2個生産、勝利点2点です。</td></tr>
+            <tr><td>発展カード</td><td>食料1 + 物資1 + 合金1</td><td>山札からカードを1枚引きます。</td></tr>
+          </tbody>
+        </table>
+        <ul>
+          <li>通常の道路は、自分の道路か拠点につながる辺に置きます。</li>
+          <li>初期配置後の拠点は、自分の道路2本以上がつながった先端にだけ建てられます。</li>
+          <li>自分の拠点をクリックすると都市化できます。初期配置中は都市化できません。</li>
+        </ul>
+      </section>
+
+      <section class="rulebook-section">
+        <h2>6. 交易</h2>
+        <h3>銀行交換</h3>
+        <p>通常は同じ資源4個を、好きな資源1個に交換できます。交易ネットワーク発動中は2:1になります。</p>
+        <h3>港交換</h3>
+        <p>港に接する拠点か都市を持つと港交換が使えます。3:1港は任意資源3個、2:1港は指定資源2個で好きな資源1個に交換できます。</p>
+        <h3>プレイヤー交易</h3>
+        <p>他プレイヤーに交換を提案し、相手が受け入れると資源を交換します。</p>
+      </section>
+
+      <section class="rulebook-section" id="cards">
+        <h2>7. 発展カード</h2>
+        <table class="rulebook-table">
+          <thead>
+            <tr><th>カード</th><th>効果</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>哨戒ドローン</td><td>中立ドローンを移動し、隣接する相手からランダムに資源1枚を奪います。</td></tr>
+            <tr><td>高速偵察隊</td><td>中立ドローンを移動し、資源1枚を奪い、次の道路1本を無料にします。</td></tr>
+            <tr><td>索敵オペレーター</td><td>奪う資源の種類を選んでから中立ドローンを移動します。</td></tr>
+            <tr><td>補給船団</td><td>好きな資源を合計2個得ます。同じ資源を2個選んでも構いません。</td></tr>
+            <tr><td>建設ビーコン</td><td>次の道路2本を無料で建設できます。</td></tr>
+            <tr><td>特別偵察任務</td><td>資源1種類を指定し、他プレイヤー全員からその資源を集めます。</td></tr>
+            <tr><td>交易ネットワーク</td><td>このターン中、銀行交換を2:1で行えます。</td></tr>
+            <tr><td>未来予測AI</td><td>山札の上3枚を見て1枚選び、残りを戻してシャッフルします。</td></tr>
+            <tr><td>現場指揮</td><td>次の建設コストを資源1個ぶん軽くします。</td></tr>
+            <tr><td>記録カード</td><td>手札に保持する勝利点カードです。勝利判定時に1点として数えます。</td></tr>
+            <tr><td>軌道破砕砲</td><td>2枚そろえると使用できます。相手拠点1つを破壊し、自分の拠点として置き換えます。</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="rulebook-section" id="score">
+        <h2>8. 勝利点</h2>
+        <table class="rulebook-table">
+          <thead>
+            <tr><th>要素</th><th>点数</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>拠点</td><td>1点</td></tr>
+            <tr><td>都市</td><td>2点</td></tr>
+            <tr><td>記録カード</td><td>1点</td></tr>
+            <tr><td>防衛司令</td><td>2点</td></tr>
+            <tr><td>先駆者</td><td>2点</td></tr>
+          </tbody>
+        </table>
+        <p>自分のターン終了時に10点以上なら勝利します。</p>
+      </section>
+    </main>
+  </body>
+</html>

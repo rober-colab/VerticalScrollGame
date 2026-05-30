@@ -457,6 +457,29 @@ h4 {
   text-underline-offset: 4px;
 }
 
+.project-video {
+  margin: 18px 0 14px;
+  overflow: hidden;
+  background: #101827;
+  border: 1px solid rgba(17, 24, 39, 0.16);
+  border-radius: 8px;
+  box-shadow: 0 14px 36px rgba(20, 31, 48, 0.12);
+}
+
+.project-video video {
+  display: block;
+  width: 100%;
+  max-height: 440px;
+  background: #101827;
+}
+
+.project-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 16px 0 2px;
+}
+
 .deep-dive {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -665,6 +688,94 @@ h4 {
   font-weight: 900;
   color: var(--cyan);
   overflow-wrap: anywhere;
+}
+
+.rulebook-page {
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(247, 251, 255, 0.96)),
+    #f7fbff;
+}
+
+.rulebook-main {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 72px clamp(20px, 5vw, 64px);
+}
+
+.rulebook-hero {
+  margin-bottom: 36px;
+}
+
+.rulebook-hero h1 {
+  max-width: 900px;
+}
+
+.rulebook-lead {
+  max-width: 760px;
+  color: #273142;
+  font-size: 18px;
+  line-height: 1.9;
+  font-weight: 700;
+}
+
+.rulebook-section {
+  margin: 18px 0;
+  padding: 24px;
+  background: rgba(255, 255, 255, 0.86);
+  border: 1px solid rgba(17, 24, 39, 0.12);
+  border-radius: 8px;
+  box-shadow: 0 12px 36px rgba(20, 31, 48, 0.07);
+}
+
+.rulebook-section h2 {
+  margin-bottom: 12px;
+  font-size: clamp(24px, 3vw, 36px);
+}
+
+.rulebook-section h3 {
+  margin-top: 18px;
+  font-size: 21px;
+}
+
+.rulebook-section p,
+.rulebook-section li {
+  color: #303a4c;
+  font-size: 16px;
+  line-height: 1.85;
+}
+
+.rulebook-section ul,
+.rulebook-section ol {
+  padding-left: 1.25em;
+}
+
+.rulebook-table {
+  width: 100%;
+  margin: 14px 0;
+  border-collapse: collapse;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.rulebook-table th,
+.rulebook-table td {
+  padding: 11px 12px;
+  text-align: left;
+  border-bottom: 1px solid rgba(17, 24, 39, 0.1);
+}
+
+.rulebook-table th {
+  color: #111827;
+  background: rgba(0, 166, 214, 0.11);
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.rulebook-table td {
+  color: #303a4c;
+  background: rgba(255, 255, 255, 0.64);
+  font-size: 15px;
+  line-height: 1.65;
 }
 
 @keyframes wave {
